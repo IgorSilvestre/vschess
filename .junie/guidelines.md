@@ -1,0 +1,3 @@
+- use Hexagonal architecture with Domain-Driven Design
+- dont use ports/adapters for domain logic
+- use clean code principles

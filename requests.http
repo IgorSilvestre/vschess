@@ -1,0 +1,27 @@
+### Create a new game as white (engine moves second)
+POST http://localhost:8000/api/v1/games
+Content-Type: application/json
+
+{
+  "side": "white"
+}
+
+###
+
+### Create a new game as black (engine responds immediately)
+POST http://localhost:8000/api/v1/games
+Content-Type: application/json
+
+{
+  "side": "black"
+}
+
+###
+
+### Submit a move for an existing game (replace {{gameSlug}} with the game id like brave-rook-42)
+POST http://localhost:8000/api/v1/games/{{gameSlug}}/move
+Content-Type: application/json
+
+{
+  "move": "e2e4"
+}
